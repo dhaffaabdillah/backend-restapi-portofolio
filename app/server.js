@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())  // parse request content type application/json
 // app.use(express.json())
 
-// app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
     res.json({message: 'Success'})
